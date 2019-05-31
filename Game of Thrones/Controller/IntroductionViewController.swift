@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class IntroductionViewController: UIViewController {
 
     @IBOutlet weak var BottomConstraint: NSLayoutConstraint!
     

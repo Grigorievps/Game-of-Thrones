@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="Game_of_Thrones" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="Game_of_Thrones" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,38 +70,55 @@
         <!--вопрос № ... из ...-->
         <scene sceneID="o6K-C7-tbF">
             <objects>
-                <viewController id="NpM-Bq-lMU" sceneMemberID="viewController">
+                <viewController id="NpM-Bq-lMU" customClass="QuestionViewController" customModule="Game_of_Thrones" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xnh-e3-1dL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pFT-0D-SSW">
-                                <rect key="frame" x="20" y="194" width="280" height="180"/>
+                                <rect key="frame" x="20" y="186" width="280" height="196"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMe-nS-PCZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="18"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgZ-f0-Ie9">
-                                        <rect key="frame" x="0.0" y="50" width="280" height="30"/>
+                                        <rect key="frame" x="0.0" y="54" width="280" height="34"/>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="18"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4al-U7-1zR">
-                                        <rect key="frame" x="0.0" y="100" width="280" height="30"/>
+                                        <rect key="frame" x="0.0" y="108" width="280" height="34"/>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="18"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z28-ee-fag">
-                                        <rect key="frame" x="0.0" y="150" width="280" height="30"/>
+                                        <rect key="frame" x="0.0" y="162" width="280" height="34"/>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="18"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LiE-Xz-EZD">
+                                <rect key="frame" x="36" y="536" width="248" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxK-Y7-a0v">
+                                <rect key="frame" x="139" y="112" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.054756835099999998" green="0.058692611749999998" blue="0.067001827060000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="LiE-Xz-EZD" secondAttribute="trailing" constant="20" id="5o3-6y-emx"/>
                             <constraint firstItem="pFT-0D-SSW" firstAttribute="centerX" secondItem="Xnh-e3-1dL" secondAttribute="centerX" id="7bc-0L-Vrl"/>
+                            <constraint firstItem="LiE-Xz-EZD" firstAttribute="leading" secondItem="Xnh-e3-1dL" secondAttribute="leadingMargin" constant="20" id="81R-cz-vtd"/>
                             <constraint firstItem="pFT-0D-SSW" firstAttribute="leading" secondItem="eae-NJ-olt" secondAttribute="leading" constant="20" id="FDB-Mu-aXR"/>
                             <constraint firstItem="eae-NJ-olt" firstAttribute="trailing" secondItem="pFT-0D-SSW" secondAttribute="trailing" constant="20" id="TQI-rt-mmq"/>
+                            <constraint firstItem="eae-NJ-olt" firstAttribute="bottom" secondItem="LiE-Xz-EZD" secondAttribute="bottom" constant="30" id="bJK-rm-beT"/>
                             <constraint firstItem="pFT-0D-SSW" firstAttribute="centerY" secondItem="Xnh-e3-1dL" secondAttribute="centerY" id="bzQ-cl-uDq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eae-NJ-olt"/>
@@ -118,7 +135,7 @@
         <!--Результат-->
         <scene sceneID="aIi-ZM-V9O">
             <objects>
-                <viewController id="noS-cf-S4b" customClass="LastViewController" customModule="Game_of_Thrones" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="noS-cf-S4b" customClass="ResultViewController" customModule="Game_of_Thrones" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dV7-6j-AgJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

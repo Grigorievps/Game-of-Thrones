@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31B25A19229FE362008E26AC /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B25A18229FE362008E26AC /* LastViewController.swift */; };
+		31B25A19229FE362008E26AC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B25A18229FE362008E26AC /* ResultViewController.swift */; };
 		31B58C4F229EA867008C53DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B58C4E229EA867008C53DC /* AppDelegate.swift */; };
-		31B58C51229EA867008C53DC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B58C50229EA867008C53DC /* FirstViewController.swift */; };
+		31B58C51229EA867008C53DC /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B58C50229EA867008C53DC /* IntroductionViewController.swift */; };
 		31B58C54229EA867008C53DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B58C52229EA867008C53DC /* Main.storyboard */; };
 		31B58C56229EA868008C53DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B58C55229EA868008C53DC /* Assets.xcassets */; };
 		31B58C59229EA868008C53DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B58C57229EA868008C53DC /* LaunchScreen.storyboard */; };
+		31D618CC22A1106C0021907B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D618CB22A1106C0021907B /* Question.swift */; };
+		31D618D022A1110C0021907B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D618CF22A1110C0021907B /* Answer.swift */; };
+		31D618D222A111680021907B /* CharacterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D618D122A111680021907B /* CharacterType.swift */; };
+		31D618D422A120A40021907B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D618D322A120A40021907B /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		31B25A18229FE362008E26AC /* LastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastViewController.swift; sourceTree = "<group>"; };
+		31B25A18229FE362008E26AC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		31B58C4B229EA867008C53DC /* Game of Thrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game of Thrones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B58C4E229EA867008C53DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31B58C50229EA867008C53DC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		31B58C50229EA867008C53DC /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		31B58C53229EA867008C53DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31B58C55229EA868008C53DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31B58C58229EA868008C53DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31B58C5A229EA868008C53DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31D618CB22A1106C0021907B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		31D618CF22A1110C0021907B /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		31D618D122A111680021907B /* CharacterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterType.swift; sourceTree = "<group>"; };
+		31D618D322A120A40021907B /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		31B58C4D229EA867008C53DC /* Game of Thrones */ = {
 			isa = PBXGroup;
 			children = (
-				31B58C4E229EA867008C53DC /* AppDelegate.swift */,
-				31B58C50229EA867008C53DC /* FirstViewController.swift */,
-				31B25A18229FE362008E26AC /* LastViewController.swift */,
-				31B58C52229EA867008C53DC /* Main.storyboard */,
-				31B58C55229EA868008C53DC /* Assets.xcassets */,
-				31B58C57229EA868008C53DC /* LaunchScreen.storyboard */,
-				31B58C5A229EA868008C53DC /* Info.plist */,
+				31D618C722A10E220021907B /* Model */,
+				31D618C922A10E430021907B /* View */,
+				31D618C822A10E360021907B /* Controller */,
+				31D618CA22A10EE10021907B /* Supporitng Files */,
 			);
 			path = "Game of Thrones";
+			sourceTree = "<group>";
+		};
+		31D618C722A10E220021907B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31D618CF22A1110C0021907B /* Answer.swift */,
+				31D618D122A111680021907B /* CharacterType.swift */,
+				31D618CB22A1106C0021907B /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		31D618C822A10E360021907B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				31B58C50229EA867008C53DC /* IntroductionViewController.swift */,
+				31D618D322A120A40021907B /* QuestionViewController.swift */,
+				31B25A18229FE362008E26AC /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		31D618C922A10E430021907B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31B58C52229EA867008C53DC /* Main.storyboard */,
+				31B58C57229EA868008C53DC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		31D618CA22A10EE10021907B /* Supporitng Files */ = {
+			isa = PBXGroup;
+			children = (
+				31B58C4E229EA867008C53DC /* AppDelegate.swift */,
+				31B58C55229EA868008C53DC /* Assets.xcassets */,
+				31B58C5A229EA868008C53DC /* Info.plist */,
+			);
+			path = "Supporitng Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B58C51229EA867008C53DC /* FirstViewController.swift in Sources */,
-				31B25A19229FE362008E26AC /* LastViewController.swift in Sources */,
+				31B58C51229EA867008C53DC /* IntroductionViewController.swift in Sources */,
+				31D618CC22A1106C0021907B /* Question.swift in Sources */,
+				31D618D422A120A40021907B /* QuestionViewController.swift in Sources */,
+				31B25A19229FE362008E26AC /* ResultViewController.swift in Sources */,
+				31D618D022A1110C0021907B /* Answer.swift in Sources */,
 				31B58C4F229EA867008C53DC /* AppDelegate.swift in Sources */,
+				31D618D222A111680021907B /* CharacterType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7386LHKG7;
-				INFOPLIST_FILE = "Game of Thrones/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Game of Thrones/Supporitng Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7386LHKG7;
-				INFOPLIST_FILE = "Game of Thrones/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Game of Thrones/Supporitng Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

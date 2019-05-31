@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LastViewController: UIViewController {
+class ResultViewController: UIViewController {
 
     @IBOutlet weak var resultTextView: UITextView!
     @IBOutlet weak var resultLable: UILabel!
