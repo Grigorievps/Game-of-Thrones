@@ -17,6 +17,9 @@ class IntroductionViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet var firstSceneView: UIView!
     
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+        
+    }
     override func viewDidLoad() {
         boudsCheck()
     }
@@ -29,5 +32,6 @@ class IntroductionViewController: UIViewController {
         }
     }
 
+    
 }
 

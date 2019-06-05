@@ -16,7 +16,7 @@ struct Question {
                  answer: [
                     Answer(text: "Власть", type: .cersei),
                     Answer(text: "Справедливость", type: .arya),
-                    Answer(text: "Храбрость", type: .daenerys),
+                    Answer(text: "Храбрость", type: .jaime),
                     Answer(text: "Честь и долг", type: .jon)
             ]),
             Question(text: "Идет битва за ваши владения. Чем займетесь?",
@@ -47,6 +47,20 @@ struct Question {
                         Answer(text: "Одиночкой", type: .arya),
                         Answer(text: "Красавчиком", type: .jaime)
                 ]),
+            Question(text: "Чем бы вы пожертвовали во имя своей цели?",
+                     answer: [
+                        Answer(text: "Любовью", type: .jaime),
+                        Answer(text: "Жизнью", type: .jon),
+                        Answer(text: "Семьёй", type: .tyrion),
+                        Answer(text: "Собственным лицом", type: .cersei)
+                ]),
+            Question(text: "Война закончилась, трон ваш. Чем теперь займетесь?",
+                     answer: [
+                        Answer(text: "Отменю рабство, построю больницы, буду бороться с голодом", type: .daenerys),
+                        Answer(text: "Разберусь с врагами", type: .cersei),
+                        Answer(text: "Не вижу причин не осущить бакальчик", type: .tyrion),
+                        Answer(text: "Назначу лордов на местах, чтобы предотвратить новые дрязги", type: .jaime)
+                ])
         ]
     }
 }
