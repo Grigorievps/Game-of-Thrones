@@ -57,7 +57,6 @@
                     </view>
                     <connections>
                         <outlet property="BottomConstraint" destination="1UC-3E-9v3" id="haW-Y4-qCg"/>
-                        <outlet property="firstSceneView" destination="8bC-Xf-vdC" id="j5O-s2-Duv"/>
                         <outlet property="lable" destination="c3Z-dR-CN3" id="WbN-4I-SFh"/>
                         <outlet property="startButton" destination="9xe-q6-6kc" id="aOy-H9-EGD"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="R32-VA-uKq"/>
@@ -141,14 +140,10 @@
                     <connections>
                         <outlet property="progressView" destination="LiE-Xz-EZD" id="cS1-UV-l3T"/>
                         <outlet property="questionLable" destination="oxK-Y7-a0v" id="EMF-uU-YyB"/>
-                        <outletCollection property="buttons" destination="EMe-nS-PCZ" collectionClass="NSMutableArray" id="5Aw-Ql-9nb"/>
-                        <outletCollection property="buttons" destination="tgZ-f0-Ie9" collectionClass="NSMutableArray" id="C2G-fX-Yle"/>
-                        <outletCollection property="buttons" destination="4al-U7-1zR" collectionClass="NSMutableArray" id="jQV-oW-BYt"/>
-                        <outletCollection property="buttons" destination="Z28-ee-fag" collectionClass="NSMutableArray" id="F55-c2-na8"/>
-                        <outletCollection property="answerButtonPressed" destination="EMe-nS-PCZ" collectionClass="NSMutableArray" id="4Mv-rK-OlB"/>
-                        <outletCollection property="answerButtonPressed" destination="tgZ-f0-Ie9" collectionClass="NSMutableArray" id="iZP-aE-8f5"/>
-                        <outletCollection property="answerButtonPressed" destination="4al-U7-1zR" collectionClass="NSMutableArray" id="bca-Lc-tUT"/>
-                        <outletCollection property="answerButtonPressed" destination="Z28-ee-fag" collectionClass="NSMutableArray" id="kvR-L0-QAq"/>
+                        <outletCollection property="answerButtons" destination="EMe-nS-PCZ" collectionClass="NSMutableArray" id="PUC-v1-Ict"/>
+                        <outletCollection property="answerButtons" destination="tgZ-f0-Ie9" collectionClass="NSMutableArray" id="Imf-R5-QqT"/>
+                        <outletCollection property="answerButtons" destination="4al-U7-1zR" collectionClass="NSMutableArray" id="qkB-34-ksC"/>
+                        <outletCollection property="answerButtons" destination="Z28-ee-fag" collectionClass="NSMutableArray" id="kjL-rY-CXS"/>
                         <segue destination="noS-cf-S4b" kind="show" identifier="resultSugue" id="ZpV-tg-aTW"/>
                     </connections>
                 </viewController>

@@ -15,7 +15,6 @@ class IntroductionViewController: UIViewController {
     @IBOutlet weak var lable: UILabel!
     
     @IBOutlet weak var startButton: UIButton!
-    @IBOutlet var firstSceneView: UIView!
     
     @IBAction func unwind(segue: UIStoryboardSegue) {
         
@@ -25,7 +24,7 @@ class IntroductionViewController: UIViewController {
     }
     
     func boudsCheck() {
-        if firstSceneView.bounds.width > 320 {
+        if view.bounds.width > 320 {
             BottomConstraint.constant = 30
             lable.font = UIFont(name: lable.font.fontName, size: 26)
             startButton.titleLabel?.font = UIFont(name: startButton.titleLabel!.font.fontName, size: 30)
