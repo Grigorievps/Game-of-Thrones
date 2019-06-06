@@ -14,6 +14,22 @@ enum CharacterType {
     case jon
     case tyrion
     
+    var name: String {
+        switch self {
+        case .arya:
+            return "Арья Старк"
+        case .cersei:
+            return "Серсея Ланистер"
+        case .daenerys:
+            return "Дейенерис Таргариен"
+        case .jaime:
+            return "Джейми Ланистер"
+        case .jon:
+            return "Джон Сноу"
+        case .tyrion:
+            return "Тирион Ланистер"
+        }
+    }
     var definition: String {
         switch self {
         case .arya:
@@ -30,5 +46,21 @@ enum CharacterType {
             return "Мудрый, ироничный, справедливый и способный на глубокие чувства, несмотря на необычную внешность и трудную судьбу. Тирион остёр на язык и обаятелен, но за честные высказывания неоднократно навлекал на себя гнев как врагов, так и родных. Образованный гедонист, проводящий досуг с чаркой в руке и красоткой под боком."
         }
         
+    }
+    var image: String {
+        switch self {
+        case .arya:
+            return "Arya "
+        case .cersei:
+            return "Cersei "
+        case .daenerys:
+            return "Daenerys "
+        case .jaime:
+            return "Jaime "
+        case .jon:
+            return "Jon "
+        case .tyrion:
+            return "Tyrion "
+        }
     }
 }

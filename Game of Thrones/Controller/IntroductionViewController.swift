@@ -26,7 +26,7 @@ class IntroductionViewController: UIViewController {
     func boudsCheck() {
         if view.bounds.width > 320 {
             BottomConstraint.constant = 30
-            lable.font = UIFont(name: lable.font.fontName, size: 26)
+            lable.font = UIFont(name: lable.font.fontName, size: 25)
             startButton.titleLabel?.font = UIFont(name: startButton.titleLabel!.font.fontName, size: 30)
         }
     }
